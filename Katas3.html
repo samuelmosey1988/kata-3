@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Katas 3</title>
-    
-    <style> 
-    .rectangle {
-        width: 100px; 
-        height: 20px; 
-        background-color: gray; 
-        padding-bottom: 10px;
-    }
+
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 20px;
+            background-color: gray;
+            padding-bottom: 10px;
+        }
     </style>
 
 
@@ -230,132 +231,218 @@
         var element14 = document.createElement("p");
         var text14 = document.createTextNode(kata14());
 
- 
-           element14.appendChild(text14);
+
+        element14.appendChild(text14);
         destination.appendChild(element14);
-    
-//KATA 15
 
-function kata15() {
-var sum = 0
+        //KATA 15
 
-for(let i = 1; i <= 20; i++) {
-sum += i 
+        function kata15() {
+            var sum = 0
 
-    }
-return "kata 15: " + sum
-}
+            for (let i = 1; i <= 20; i++) {
+                sum += i
 
-var element15 = document.createElement("p");
-var text15 = document.createTextNode(kata15());
-
-element15.appendChild(text15);
-destination.appendChild(element15);
-
-//KATA 16
-
-function kata16() {
-var sum = 0
-
-for(let i = 0; i < sampleArray.length; i++) {
-sum += sampleArray[i]
-
-    }
-return "kata 16: " + sum
-}
-
-var element16 = document.createElement("p");
-var text16 = document.createTextNode(kata16());
-
-element16.appendChild(text16);
-destination.appendChild(element16);
-    
-//KATA 17
-
-function kata17() {
-    let smallestElement = sampleArray [0]
-    for(let i = 1; i < sampleArray.length; i++) {
-        if(sampleArray[i] < smallestElement) {
-            smallestElement = sampleArray[i]
+            }
+            return "kata 15: " + sum
         }
-    
-    } return "kata 17: " + smallestElement
 
-}
+        var element15 = document.createElement("p");
+        var text15 = document.createTextNode(kata15());
 
-var element17 = document.createElement("p");
-var text17 = document.createTextNode(kata17());
+        element15.appendChild(text15);
+        destination.appendChild(element15);
 
-element17.appendChild(text17);
-destination.appendChild(element17);
+        //KATA 16
 
-//KATA 18
+        function kata16() {
+            var sum = 0
 
-function kata18() {
-    let largestElement = sampleArray [0]
-    for(let i = 1; i < sampleArray.length; i++) {
+            for (let i = 0; i < sampleArray.length; i++) {
+                sum += sampleArray[i]
 
-        if(sampleArray[i] > largestElement) {
-            largestElement = sampleArray[i]
+            }
+            return "kata 16: " + sum
         }
- 
-    } return "kata 18: " + largestElement      
 
-}
+        var element16 = document.createElement("p");
+        var text16 = document.createTextNode(kata16());
 
-var element18 = document.createElement("p");
-var text18 = document.createTextNode(kata18());
+        element16.appendChild(text16);
+        destination.appendChild(element16);
 
-element18.appendChild(text18);
-destination.appendChild(element18);
+        //KATA 17
 
-//KATA 19     
+        function kata17() {
+            let smallestElement = sampleArray[0]
+            for (let i = 1; i < sampleArray.length; i++) {
+                if (sampleArray[i] < smallestElement) {
+                    smallestElement = sampleArray[i]
+                }
 
-function kata19() {
-let divElement = document.createElement("div"); 
-var text19 = document.createTextNode("Kata 19: "); 
+            }
+            return "kata 17: " + smallestElement
 
-divElement.appendChild(text19); 
+        }
 
-for(i = 1; i <= 20; i++){
-    let rectangle = document.createElement("div"); 
-    rectangle.className = "rectangle"
-    divElement.appendChild(rectangle);
-    divElement.appendChild(document.createElement("br"))
-    }
-return divElement
-} 
-destination.appendChild(kata19()); 
+        var element17 = document.createElement("p");
+        var text17 = document.createTextNode(kata17());
 
-//KATA 20
+        element17.appendChild(text17);
+        destination.appendChild(element17);
 
-function kata20() {
-    let divElement = document.createElement("div"); 
+        //KATA 18
 
-var text20 = document.createTextNode("Kata 20: "); 
-divElement.appendChild(text20); 
+        function kata18() {
+            let largestElement = sampleArray[0]
+            for (let i = 1; i < sampleArray.length; i++) {
 
-for (var i = 1; i <= 20; i++){
-    let rectangle = document.createElement("div"); 
-    rectangle.className = "rectangle";
+                if (sampleArray[i] > largestElement) {
+                    largestElement = sampleArray[i]
+                }
+
+            }
+            return "kata 18: " + largestElement
+
+        }
+
+        var element18 = document.createElement("p");
+        var text18 = document.createTextNode(kata18());
+
+        element18.appendChild(text18);
+        destination.appendChild(element18);
+
+        //KATA 19     
+
+        function kata19() {
+            let divElement = document.createElement("div");
+            var text19 = document.createTextNode("Kata 19: ");
+
+            divElement.appendChild(text19);
+
+            for (i = 1; i <= 20; i++) {
+                let rectangle = document.createElement("div");
+                rectangle.className = "rectangle"
+                divElement.appendChild(rectangle);
+                divElement.appendChild(document.createElement("br"))
+            }
+            return divElement
+        }
+        destination.appendChild(kata19());
+
+        //KATA 20
+
+        function kata20() {
+            let divElement = document.createElement("div");
+
+            var text20 = document.createTextNode("Kata 20: ");
+            divElement.appendChild(text20);
+
+            for (var i = 1; i <= 20; i++) {
+                let rectangle = document.createElement("div");
+                rectangle.className = "rectangle";
+
+                rectangle.style.width = 100 + i * 5 + "px";
+
+                divElement.appendChild(rectangle);
+                divElement.appendChild(document.createElement("br"))
+
+            }
+            return divElement;
+        }
+        destination.appendChild(kata20());
+
+        //KATA 21
+
+        function kata21() {
+            let divElement = document.createElement("div");
+
+            var text21 = document.createTextNode("Kata 21: ");
+            divElement.appendChild(text21);
+
+            for (var i = 0; i < sampleArray.length; i++) {
+                const widthInPixels = sampleArray[i]
+
+                let rectangle = document.createElement("div");
+                rectangle.className = "rectangle";
+
+                rectangle.style.width = widthInPixels + "px";
+
+                divElement.appendChild(rectangle);
+                divElement.appendChild(document.createElement("br"))
+
+            }
+            return divElement;
+        }
+        destination.appendChild(kata21());
+
+        //KATA 22
+
+        function kata22() {
+            let divElement = document.createElement("div");
+
+            var text22 = document.createTextNode("Kata 22: ");
+            divElement.appendChild(text22);
+            
+            let color = "red"; 
+            
+            for (var i = 0; i < sampleArray.length; i++) {
+                const widthInPixels = sampleArray[i]
+
+                let rectangle = document.createElement("div");
+                rectangle.className = "rectangle";
+
+                rectangle.style.width = widthInPixels + "px";
+
+                if (color === "red") {
+                    rectangle.style.backgroundColor = "red";
+                    color = "default"
+                } else {
+                    color = "red"
+                }
+
+
+                divElement.appendChild(rectangle);
+                divElement.appendChild(document.createElement("br"))
+
+            }
+            return divElement;
+        }
+        destination.appendChild(kata22());
     
-    rectangle.style.width = 100 + i * 5 + "px";
+//KATA 23 
 
-    divElement.appendChild(rectangle);
-    divElement.appendChild(document.createElement("br"))
+function kata23() {
+            let divElement = document.createElement("div");
+
+            var text23 = document.createTextNode("Kata 23: ");
+            divElement.appendChild(text23);
+            
+            let color = "red"; 
+            
+            for (var i = 0; i < sampleArray.length; i++) {
+                const widthInPixels = sampleArray[i]
+
+                let rectangle = document.createElement("div");
+                rectangle.className = "rectangle";
+
+                rectangle.style.width = widthInPixels + "px";
+
+                const isEven = (i % 2 === 0)
+                if (isEven) {
+                    rectangle.style.backgroundColor = "red";
+                
+                }
+
+                divElement.appendChild(rectangle);
+                divElement.appendChild(document.createElement("br"))
+
+            }
+            return divElement;
+        }
+        destination.appendChild(kata23());    
     
-    }    
-    return divElement;
-}
-destination.appendChild(kata20()); 
-
-//KATA 21
-
-function kata21() {
-    
-}
-
- </script>
+    </script>
 
 </body>
 
